@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<W0E0RY_konferencia>
+    <konferencia>
+        <cim>Adatkezelés XML-ben</cim>
+        <hallgatók>
+            <hallgató>
+                <név>Szepesi Glória Virág</név>
+                <lakcím>Miskolc</lakcím>
+            </hallgató>    
+        </hallgatók>
+        <helyszín>Miskolc</helyszín> 
+        <előadó>
+            <név>Dr. Bednarik László</név>
+            <adószám>123456789</adószám>
+            <lakcím>Miskolc</lakcím>    
+        </előadó> 
+        <dátum>2025.09.18.</dátum>
+    </konferencia>
+
+    <konferencia>
+        <cim>Adatkezelés XML-ben</cim>
+        <hallgatók>
+            <hallgató>
+                <név>Jobbágy Dániel</név>
+                <lakcím>Miskolc</lakcím>
+            </hallgató>    
+        </hallgatók>
+        <helyszín>Miskolc</helyszín> 
+        <előadó>
+            <név>Dr. Bednarik László</név>
+            <adószám>1234567899</adószám>
+            <lakcím>Miskolc</lakcím>    
+        </előadó> 
+        <dátum>2024.10.01</dátum>
+    </konferencia>
+
+    <konferencia>
+        <cim>Tanitsunk Magyarországért</cim>
+        <hallgatók>
+            <hallgató>
+                <név>Kiss Dániel</név>
+                <lakcím>Miskolc</lakcím>
+            </hallgató>    
+        </hallgatók>
+        <helyszín>Miskolc</helyszín> 
+        <előadó>
+            <név>Dr. Baross Mihály</név>
+            <adószám>153246879</adószám>
+            <lakcím>Miskolc</lakcím>    
+        </előadó> 
+        <dátum>2024.10.15</dátum>
+    </konferencia>
+
+</W0E0RY_konferencia>
