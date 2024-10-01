@@ -49,8 +49,8 @@
 
     <xs:simpleType name="idopontOraTipus">
         <xs:restriction base="xs:positiveInteger">
-            <xs:minInclusive value="10"/>
-            <xs:maxInclusive value="20"/>
+            <xs:minInclusive value="8"/>
+            <xs:maxInclusive value="18"/>
         </xs:restriction>
     </xs:simpleType>
     
