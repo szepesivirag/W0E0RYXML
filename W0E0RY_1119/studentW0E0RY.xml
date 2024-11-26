@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="studentW0E0RY.xsd">
+    <student student_id="01">
+        <keresztnev>Bálint</keresztnev>
+        <vezeteknev>Kiss</vezeteknev>
+        <becenev>Sisiti</becenev>
+        <kor>21</kor>
+    </student>
+
+    <student student_id="02">
+        <keresztnev>Gergely</keresztnev>
+        <vezeteknev>Magyar</vezeteknev>
+        <becenev>Geri</becenev>
+        <kor>21</kor>
+    </student>
+
+    <student student_id="03">
+        <keresztnev>Ákos</keresztnev>
+        <vezeteknev>Takács</vezeteknev>
+        <becenev>Taki</becenev>
+        <kor>21</kor>
+    </student>
+
+     <student student_id="04">
+        <keresztnev>Gingeráld</keresztnev>
+        <vezeteknev>nagy</vezeteknev>
+        <becenev>tveni</becenev>
+        <kor>25</kor>
+    </student>
+
+    <student student_id="05">
+        <keresztnev>Mátyás</keresztnev>
+        <vezeteknev>Szabo</vezeteknev>
+        <becenev>Matyiken</becenev>
+        <kor>21</kor>
+    </student>
+</class>
