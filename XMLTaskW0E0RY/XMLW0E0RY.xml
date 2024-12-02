@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Palyaudvar xsi:noNameSpaceSchemaLocation="./XMLSchemaHR6121.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!--Autóbuszok pédányosítása-->
+	
+	<Buszok>
+	
+		<Buszok Id="001">
+			<Rendszam> < KWV-965 > </Rendszam>
+			<Tipus> Mercedes </Tipus>
+			<max_hely> 52 </max_hely>
+		<Buszok >
+
+		<Buszok Id="002">
+			<Rendszam> KWH-040 </Rendszam>
+			<Tipus> Ikarus </Tipus>
+			<max_hely> 40 </max_hely>
+		<Buszok >
+		
+		<Buszok Id="003">
+			<Rendszam> PTE-102 </Rendszam>
+			<Tipus> Ikarus </Tipus>
+			<max_hely> 40 </max_hely>
+		<Buszok >
+
+		<Buszok Id="004">
+			<Rendszam> GEC-420 </Rendszam>
+			<Tipus> MAN </Tipus>
+			<max_hely> 50 </max_hely>
+		<Buszok >
+
+		<Buszok Id="005">
+			<Rendszam> KKK-012 </Rendszam>
+			<Tipus> Mercedes </Tipus>
+			<max_hely> 52 </max_hely>
+		<Buszok >
+	
+		<Buszok Id="006">
+			<Rendszam> GDP-456 </Rendszam>
+			<Tipus> MAN </Tipus>
+			<max_hely> 50 </max_hely>
+		<Buszok >
+
+		<Buszok Id="007">
+			<Rendszam> LPG-324 </Rendszam>
+			<Tipus> Ikarus </Tipus>
+			<max_hely> 40 </max_hely>
+		<Buszok >
+
+		<Buszok Id="008">
+			<Rendszam> KRV-666 </Rendszam>
+			<Tipus> MAN </Tipus>
+			<max_hely> 50 </max_hely>
+		<Buszok >
+	
+		<Buszok Id="009">
+			<Rendszam> </RPL-104> </Rendszam>
+			<Tipus> Mercedes </Tipus>
+			<max_hely> 52 </max_hely>
+		<Buszok >
+	
+	<Buszok ok>
+
+	<Soforok>
+	
+		<Sofor SoforId="101">
+			<Jegykiadoszam> H37625 </Jegykiadoszam>
+			<Nev> Ragó Lili </Nev>
+			<Buszok Id_FK> 007 <Buszok Id_FK>
+		</Sofor>
+
+		<Sofor SoforId="102">
+			<Jegykiadoszam> K47382 </Jegykiadoszam>
+			<Nev> Zakar Edit Dóra </Nev>
+			<Buszok Id_FK> 001 <Buszok Id_FK>
+		</Sofor>
+
+		<Sofor SoforId="103">
+			<Jegykiadoszam> L98237 </Jegykiadoszam>
+			<Nev> Andó Viktória </Nev>
+			<Buszok Id_FK> 006 <Buszok Id_FK>
+		</Sofor>
+
+		<Sofor SoforId="104">
+			<Jegykiadoszam> B25869 </Jegykiadoszam>
+			<Nev> Szabó Attila </Nev>
+			<Buszok Id_FK> 002 <Buszok Id_FK>
+		</Sofor>
+
+		<Sofor SoforId="105">
+			<Jegykiadoszam> S14785 </Jegykiadoszam>
+			<Nev> Molnár Lili Noémi </Nev>
+			<Buszok Id_FK> 005 <Buszok Id_FK>
+		</Sofor>
+
+		<Sofor SoforId="106">
+			<Jegykiadoszam> O13579 </Jegykiadoszam>
+			<Nev> Soltész Bianka Gizella </Nev>
+			<Buszok Id_FK> 004 <Buszok Id_FK>
+		</Sofor>
+
+		<Sofor SoforId="107">
+			<Jegykiadoszam> U45691 </Jegykiadoszam>
+			<Nev> Rása Valentia Izabella </Nev>
+			<Buszok Id_FK> 009 <Buszok Id_FK>
+		</Sofor>
+
+		<Sofor SoforId="108">
+			<Jegykiadoszam> W11335 </Jegykiadoszam>
+			<Nev> Takács Viktória </Nev>
+			<Buszok Id_FK> 008 <Buszok Id_FK>
+		</Sofor>
+		
+		<Sofor SoforId="109">
+			<Jegykiadoszam> J43434 </Jegykiadoszam>
+			<Nev> Ternay Frank </Nev>
+			<Buszok Id_FK> 003 <Buszok Id_FK>
+		</Sofor>
+	
+	</Soforok>
+	
+	<Szervizesek>
+		
+		<Szerviz SzervizId="201">
+			<Javitoszam> C6005 </Javitoszam>
+			<Nev> Bihari Panna </Nev>
+			<Buszok Id_FK> 006 <Buszok Id_FK>	
+		</Szerviz>
+
+		<Szerviz SzervizId="202">
+			<Javitoszam> M8009 </Javitoszam>
+			<Nev> Ragó Lajos </Nev>
+			<Buszok Id_FK> 007 <Buszok Id_FK>	
+		</Szerviz>
+
+		<Szerviz SzervizId="203">
+			<Javitoszam> Z7003 </Javitoszam>
+			<Nev> Pál Vajk </Nev>
+			<Buszok Id_FK> 004 <Buszok Id_FK>	
+		</Szerviz>
+
+		<Szerviz SzervizId="204">
+			<Javitoszam> X5114 </Javitoszam>
+			<Nev> Náray Áron </Nev>
+			<Buszok Id_FK> 002 <Buszok Id_FK>	
+		</Szerviz>
+
+		<Szerviz SzervizId="205">
+			<Javitoszam> E8877 </Javitoszam>
+			<Nev> Nagy Tamás Roland </Nev>
+			<Buszok Id_FK> 001 <Buszok Id_FK>	
+		</Szerviz>
+	</Szervizk>
+	
+	<Eszkozok>
+		<Eszkoz EszkozId="301">
+			<Termekszam> 97 </Termekszam>
+			<Gyarto> Bosch </Gyarto>
+			<Ev> 1 </Ev>
+			<SzervizId_FK> 201 </SzervizId_FK>
+		</Eszkoz>
+	
+		<Eszkoz EszkozId="302">
+			<Termekszam> 42 </Termekszam>
+			<Gyarto> Bosch </Gyarto>
+			<Ev> 3 </Ev>
+			<SzervizId_FK> 202 </SzervizId_FK>
+		</Eszkoz>
+		
+		<Eszkoz EszkozId="303">
+			<Termekszam> 55 </Termekszam>
+			<Gyarto> Bosch </Gyarto>
+			<Ev> 5 </Ev>
+			<SzervizId_FK> 203 </SzervizId_FK>
+		</Eszkoz>
+		
+		<Eszkoz EszkozId="304">
+			<Termekszam> 12 </Termekszam>
+			<Gyarto> Bosch </Gyarto>
+			<Ev> 2 </Ev>
+			<SzervizId_FK> 204 </SzervizId_FK>
+		</Eszkoz>
+		
+		<Eszkoz EszkozId="305">
+			<Termekszam> 08 </Termekszam>
+			<Gyarto> Bosch </Gyarto>
+			<Ev> 7 </Ev>
+			<SzervizId_FK> 205 </SzervizId_FK>
+		</Eszkoz>
+	
+	</Eszkozok>
+	
+	<Utvonalak>
+		<Utvonal UtvonailId="401">
+			<KezdAll> Felső Majláth </KezdAll>
+			<VegAll> Tiszai pu. </VegAll>
+			<Km> 12 </Km>
+		</Utvonal>
+		
+		<Utvonal UtvonalId="402">
+			<KezdAll> Majális park </KezdAll>
+			<VegAll> Népkert </VegAll>
+			<km> 7 </km>
+		</Utvonal>
+		
+		<Utvonal UtvonalId="403">
+			<KezdAll> Újgyőri főtér </KezdAll>
+			<VegAll> Avasi Kilátó </VegAll>
+			<km> 9 </km>
+		</Utvonal>
+		
+		<Utvonal UtvonalId="404">
+			<KezdAll> Vasgyár </KezdAll>
+			<VegAll> Centrum </VegAll>
+			<km> 7 </km>
+		</Utvonal>
+		
+		<Utvonal UtvonalId="405">
+			<KezdAll> Repülőtér </KezdAll>
+			<VegAll> Bábonyi bérc </VegAll>
+			<km> 10 </km>
+		</Utvonal>
+		
+	</Utvonalak>
+
+	<Haladok>
+		<Halad>
+			<UtvonalId_FK> 401 </UtvonalId_FK>
+			<Buszok ID_FK> 003 <Buszok ID_FK>
+			<Menetido> 25 </Menetido>
+		</Halad>
+	
+		<Halad>
+			<UtvonalId_FK> 404 </UtvonalId_FK>
+			<Buszok ID_FK> 001 <Buszok ID_FK>
+			<Menetido> 26 </Menetido>
+		</Halad>
+
+		<Halad>
+			<UtvonalId_FK> 405 </UtvonalId_FK>
+			<Buszok ID_FK> 007 <Buszok ID_FK>
+			<Menetido> 19 </Menetido>
+		</Halad>
+
+		<Halad>
+			<UtvonalId_FK> 402 </UtvonalId_FK>
+			<Buszok ID_FK> 002 <Buszok ID_FK>
+			<Menetido> 24 </Menetido>
+		</Halad>
+		
+		<Halad>
+			<UtvonalId_FK> 404 </UtvonalId_FK>
+			<Buszok ID_FK> 003 <Buszok ID_FK>
+			<Menetido> 21 </Menetido>
+		</Halad>
+		
+		<Halad>
+			<UtvonalId_FK> 403 </UtvonalId_FK>
+			<Buszok ID_FK> 009 <Buszok ID_FK>
+			<Menetido> 20 </Menetido>
+		</Halad>
+		
+		<Halad>
+			<UtvonalId_FK>406 </UtvonalId_FK>
+			<Buszok ID_FK> 001 <Buszok ID_FK>
+			<Menetido> 23 </Menetido>
+		</Halad>
+	
+	</Haladok>
+	
+	<Kalauz>
+		<Kalauz KalauzId="501">
+			<Nev> Pataki Csanad </Nev>
+			<SoforId_FK> 102 </SoforId_FK>
+			<SzervizId_FK> 204 </SzervizId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 11 </Irodaszam>
+				<Email> pat.csan@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 584 888 </Telefonszam>
+			<Telefonszam> +36 55 563 979 </Telefonszam>
+		</Kalauz>
+		
+		<Kalauz KalauzId="502">
+			<Nev> Gabor Borbala </Nev>
+			<SoforId_FK> 104 </SoforId_FK>
+			<SzervizId_FK> 202 </SzervizId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 12 </Irodaszam>
+				<Email> gab.bor@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 010 226 </Telefonszam>
+			<Telefonszam> +36 55 686 186 </Telefonszam>
+		</Kalauz>
+		
+		<Kalauz KalauzId="503">
+			<Nev> Szabó Oszkár </Nev>
+			<SoforId_FK> 103 </SoforId_FK>
+			<SzervizId_FK> 201 </SzervizId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 13 </Irodaszam>
+				<Email> szab.osz@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 686 186 </Telefonszam>
+			<Telefonszam> +36 55 010 226 </Telefonszam>
+		</Kalauz>
+		
+		<Kalauz KalauzId="504">
+			<Nev> Hegyi Borbala </Nev>
+			<SoforId_FK> 108 </SoforId_FK>
+			<SzervizId_FK> 203 </SzervizId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 14 </Irodaszam>
+				<Email> hegy.bor@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 563 979 </Telefonszam>
+			<Telefonszam> +36 55 584 888 </Telefonszam>
+		</Kalauz>
+		
+		<Kalauz KalauzId="505">
+			<Nev> Nagy Andrea </Nev>
+			<SoforId_FK> 109 </SoforId_FK>
+			<SzervizId_FK> 205 </SzervizId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 15 </Irodaszam>
+				<Email> nagy.and@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 923 742 </Telefonszam>
+			<Telefonszam> +36 55 923 742 </Telefonszam>
+		</Kalauz>
+		
+	</Kalauz>
+
+</Palyaudvar>
