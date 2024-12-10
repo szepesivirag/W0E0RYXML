@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A saját órarendem</title>
+    
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25px;
+        }
+        .tanora {
+            margin-bottom: 20px;
+        }
+        .tanora h3 {
+            margin: 0;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+
+    <h2>W0E0RY Órarend 2024</h2>
+
+    <div id="orak"></div>
+
+    <script>
+        // A JSON adat, amit a JavaScript kódban használunk
+        const jsonData = {
+            "orarend": {
+                "ora": [
+                    {
+                        "id": "01",
+                        "tipus": "előadás",
+                        "targy": "Adatkezelés XML-ben",
+                        "idopont": {
+                            "nap": "kedd",
+                            "tol": "10",
+                            "ig": "12"
+                        },
+                        "helyszin": "Inf/103",
+                        "oktato": "Dr. Bednarik László",
+                        "szak": "Programtervező Informatikus"
+                    },
+                    {
+                        "id": "02",
+                        "tipus": "gyakorlat",
+                        "targy": "Adatkezelés XML-ben",
+                        "idopont": {
+                            "nap": "kedd",
+                            "tol": "12",
+                            "ig": "14"
+                        },
+                        "helyszin": "Inf/103",
+                        "oktato": "Dr. Bednarik László",
+                        "szak": "Programtervező Informatikus"
+                    },
+                    {
+                        "id": "03",
+                        "tipus": "előadás",
+                        "targy": "Szoftvertechnológia",
+                        "idopont": {
+                            "nap": "szerda",
+                            "tol": "08",
+                            "ig": "10"
+                        },
+                        "helyszin": "III. Előadó",
+                        "oktato": "Dr. Mileff Péter",
+                        "szak": "Programtervező Informatikus"
+                    },
+                    {
+                        "id": "04",
+                        "tipus": "gyakorlat",
+                        "targy": "Szoftvertechnológia",
+                        "idopont": {
+                            "nap": "szerda",
+                            "tol": "10",
+                            "ig": "12"
+                        },
+                        "helyszin": "III. Előadó",
+                        "oktato": "Dr. Mileff Péter",
+                        "szak": "Programtervező Informatikus"
+                    }
+                ]
+            }
+        };
+
+
+        const orak = document.getElementById("orak");
+
+        jsonData.orarend.ora.forEach(function(tanora) {
+        
+
+            const lessonDiv = document.createElement("div");
+            lessonDiv.classList.add("tanora");
+
+            lessonDiv.innerHTML = 
+            `
+                <h4>Tárgy: ${tanora.targy}</h4>
+                <p>Időpont: ${tanora.idopont.nap} ${tanora.idopont.tol}-${tanora.idopont.ig}</p>
+                <p>Helyszín: ${tanora.helyszin}</p>
+                <p>Oktató: ${tanora.oktato}</p>
+                <p>Szak: ${tanora.szak}</p>
+            `;
+
+            orak.appendChild(lessonDiv);
+        });
+        
+    </script>
+    
+</body>
+
+</html>
