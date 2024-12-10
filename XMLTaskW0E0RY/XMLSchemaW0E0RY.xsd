@@ -1,114 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <!-- simpleType típusú elemek -->
+    <xs:simpleType name="FonokIdType">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9][0-9][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
 
-    <xs:element name="Palyaudvar">
-        <xs:complexType>
-            <xs:sequence>
+    <xs:simpleType name="szervizIdType">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9][0-9][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
 
-                <xs:element name="Fonokok">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Fonok" type="FonokTip" minOccurs="0" maxOccurs="unbounded" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+    <xs:simpleType name="BuszIdType">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9][0-9][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
 
-                <xs:element name="Szerviz">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="szerviz" type="szervizTip" minOccurs="0" maxOccurs="unbounded"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+    <xs:simpleType name="SoforIdType">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9][0-9][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
 
-                <xs:element name="Buszok">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Busz" type="BuszTip" minOccurs="0" maxOccurs="unbounded"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                
-                <xs:element name="Soforok">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Sofor" type="SoforTip" minOccurs="0" maxOccurs="unbounded"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                
-                <xs:element name="Utvonalak">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Utvonal" type="UtvonalTip" minOccurs="0" maxOccurs="unbounded"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                
-                <xs:element name="Kalauzok">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Kalauz" type="KalauzTip" minOccurs="0" maxOccurs="unbounded"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+    <xs:simpleType name="UtvonalIdType">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9][0-9][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
 
-				<xs:element name="Haladok">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="Halad" type="HaladTip" minOccurs="0" maxOccurs="unbounded"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-            </xs:sequence>
-        </xs:complexType>
-
-        <xs:unique name="FonokId_FK">
-            <xs:selector xpath="Fonokek/Fonok"/>
-            <xs:field xpath="@FonokId"/>
-        </xs:unique>
-
-		<xs:keyref name="BuszID_FK-szerviz" refer="BuszID_FK">
-			<xs:selector xpath="Szerviz/szerviz/BuszId_FK"/>
-			<xs:field xpath="."/>
-		</xs:keyref>
-		
-		<xs:keyref name="BuszID_FK-Sofor" refer="BuszID_FK">
-			<xs:selector xpath="Soforok/Sofor/BuszId_FK"/>
-			<xs:field xpath="."/>
-		</xs:keyref>
-
-		<xs:keyref name="BuszID_FK-Halad" refer="BuszID_FK">
-			<xs:selector xpath="Haladas/Halad/BuszId_FK"/>
-			<xs:field xpath="."/>
-		</xs:keyref>
-
-		<xs:keyref name="szervizID_FK-Kalauz" refer="szervizID_FK">
-			<xs:selector xpath="Kalauzk/Kalauz/szervizId_FK"/>
-			<xs:field xpath="."/>
-		</xs:keyref>
-
-		<xs:keyref name="SoforID_FK-Kalauz" refer="SoforID_FK">
-			<xs:selector xpath="Kalauzk/Kalauz/SoforId_FK"/>
-			<xs:field xpath="."/>
-		</xs:keyref>
-    </xs:element>
-
+    <!-- complexType típusú elemek -->
     <xs:complexType name="FonokTipus">
         <xs:sequence>
             <xs:element name="Gyarto" type="xs:string"/>
-            <xs:element name="HasznaltEvek" type="xs:Integer"/>
+            <xs:element name="HasznaltEvek" type="xs:integer"/>
             <xs:element name="TermekSzam" type="xs:integer"/>
             <xs:element name="szervizId_FK" type="xs:integer"/>
         </xs:sequence>
-        <xs:attribute name="FonokId" use="required">
-            <xs:simpleType>
-                <xs:restriction base="xs:integer">
-                    <xs:pattern value="[0-9][0-9][0-9]" />
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
+        <xs:attribute name="FonokId" type="FonokIdType" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="szervizTipus">
@@ -117,13 +48,7 @@
             <xs:element name="JavitoiSzam" type="xs:integer"/>
             <xs:element name="BuszId_FK" type="xs:integer"/>
         </xs:sequence>
-        <xs:attribute name="szervizId" use="required">
-            <xs:simpleType>
-                <xs:restriction base="xs:integer">
-                    <xs:pattern value="[0-9][0-9][0-9]" />
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
+        <xs:attribute name="szervizId" type="szervizIdType" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="BuszTipus">
@@ -132,30 +57,17 @@
             <xs:element name="Tipus" type="xs:string"/>
             <xs:element name="Rendszam" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute name="BuszId" use="required">
-            <xs:simpleType>
-                <xs:restriction base="xs:integer">
-                    <xs:pattern value="[0-9][0-9][0-9]" />
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
+        <xs:attribute name="BuszId" type="BuszIdType" use="required"/>
     </xs:complexType>
-
 
     <xs:complexType name="SoforTipus">
         <xs:sequence>
-            <xs:element name="JegykiadoSzam " type="xs:integer"/>
+            <xs:element name="JegykiadoSzam" type="xs:integer"/>
             <xs:element name="Nev" type="xs:string"/>
             <xs:element name="TermekSzam" type="xs:string"/>
             <xs:element name="BuszId_FK" type="xs:integer"/>
         </xs:sequence>
-        <xs:attribute name="SoforId" use="required">
-            <xs:simpleType>
-                <xs:restriction base="xs:integer">
-                    <xs:pattern value="[0-9][0-9][0-9]" />
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
+        <xs:attribute name="SoforId" type="SoforIdType" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="UtvonalTipus">
@@ -164,39 +76,142 @@
             <xs:element name="VegAll" type="xs:string"/>
             <xs:element name="km" type="xs:integer"/>
         </xs:sequence>
-        <xs:attribute name="UtvonalId" use="required">
-            <xs:simpleType>
-                <xs:restriction base="xs:integer">
-                    <xs:pattern value="[0-9][0-9][0-9]" />
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
+        <xs:attribute name="UtvonalId" type="UtvonalIdType" use="required"/>
     </xs:complexType>
 
-	<xs:complexType name="KalauzTipus">
-		<xs:sequence>
-			<xs:element name="Nev " type="xs:String"/>
-			<xs:element name="Telefonszam" type="xs:integer"/>
-			<xs:element name="email" type="xs:string"/>
-			<xs:element name="irodaszam" type="xs:integer"/>
-			<xs:element name="SoforId_FK" type="xs:integer"/>
-			<xs:element name="szervizId_FK" type="xs:integer"/>
-		</xs:sequence>
-		<xs:attribute name="szervizId" use="required">
-			<xs:simpleType>
-				<xs:restriction base="xs:integer">
-					<xs:pattern value="[0-9][0-9][0-9]" />
-				</xs:restriction>
-			</xs:simpleType>
-		</xs:attribute>
-	</xs:complexType>
+    <xs:complexType name="KalauzTipus">
+        <xs:sequence>
+            <xs:element name="Nev" type="xs:string"/>
+            <xs:element name="Telefonszam" type="xs:integer"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="irodaszam" type="xs:integer"/>
+            <xs:element name="SoforId_FK" type="xs:integer"/>
+            <xs:element name="szervizId_FK" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="szervizId" type="szervizIdType" use="required"/>
+    </xs:complexType>
 
     <xs:complexType name="HaladTipus">
         <xs:sequence>
             <xs:element name="BuszId_FK" type="xs:integer"/>
             <xs:element name="UtvonalId_FK" type="xs:integer"/>
-			<xs:element name="menetido" type="xs:integer"/>
+            <xs:element name="menetido" type="xs:integer"/>
         </xs:sequence>
     </xs:complexType>
+
+      <!-- Gyökérelemtől az elemek felhasználása -->
+    <xs:element name="Pályaudvar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fonok" type="F_ID" minOccurs="0" maxOccurs="100" />
+                <xs:element name="Szerviz" type="Sz_ID" minOccurs="0" maxOccurs="100" />
+                <xs:element name="busz" type="B_ID" minOccurs="0" maxOccurs="100" />
+                <xs:element name="Soforok" type="S_ID" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element name="utvonal" type="U_ID" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element name="kalauz" type="K_ID" minOccurs="1" maxOccurs="100" />
+            </xs:sequence>
+        </xs:complexType>
+
+   <!-- <xs:element name="Palyaudvar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Fonokok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Fonok" type="FonokTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Szerviz">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="szerviz" type="szervizTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Buszok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Busz" type="BuszTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Soforok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Sofor" type="SoforTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Utvonalak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Utvonal" type="UtvonalTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Kalauzok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Kalauz" type="KalauzTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Haladok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Halad" type="HaladTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType> -->
+
+    <!-- Elsődleges kulcsok -->
+
+    
+        <xs:unique name="FonokId_FK">
+            <xs:selector xpath="Fonokok/Fonok"/>
+            <xs:field xpath="@FonokId"/>
+        </xs:unique>
+        
+        <xs:key name="FonokId_">
+            <xs:selector xpath="Fonokok/Fonok"/>
+            <xs:field xpath="@FonokId"/>
+        </xs:key>
+
+        <xs:key name="SzervizID">
+            <xs:selector xpath="Fonokok/Fonok" />
+            <xs:field xpath="@FonokId" />
+        </xs:key>
+
+        <xs:keyref name="BuszID_FK-szerviz" refer="BuszID_FK">
+            <xs:selector xpath="Szerviz/szerviz/BuszId_FK"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+
+        <xs:keyref name="BuszID_FK-Sofor" refer="BuszID_FK">
+            <xs:selector xpath="Soforok/Sofor/BuszId_FK"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+
+        <xs:keyref name="BuszID_FK-Halad" refer="BuszID_FK">
+            <xs:selector xpath="Haladok/Halad/BuszId_FK"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+
+        <xs:keyref name="szervizID_FK-Kalauz" refer="szervizID_FK">
+            <xs:selector xpath="Kalauzok/Kalauz/szervizId_FK"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+
+
+    </xs:element>
 
 </xs:schema>
