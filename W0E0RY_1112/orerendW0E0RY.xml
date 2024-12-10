@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>
+
+		<ora id="01" tipus="előadás">
+			<targy> Adatkezelés XML-ben </targy>
+			<idopont>
+				<nap> kedd </nap>
+				<tol> 10 </tol>
+				<ig> 12 </ig>
+			</idopont>
+			<helyszin> Inf/103 </helyszin>
+			<oktato> Dr. Bednarik László </oktato>
+			<szak> Programtervező Informatikus </szak>
+		</ora>
+		<ora id="02" tipus="gyakorlat">
+			<targy> Adatkezelés XML-ben </targy>
+			<idopont>
+				<nap> kedd </nap>
+				<tol> 12 </tol>
+				<ig> 14 </ig>
+			</idopont>
+			<helyszin> Inf/103 </helyszin>
+			<oktato> Dr. Bednarik László </oktato>
+			<szak> Programtervező Informatikus </szak>
+		</ora>
+
+		<ora id="03" tipus="előadás">
+			<targy> Szoftvertechnológia </targy>
+			<idopont>
+				<nap> szerda </nap>
+				<tol> 08 </tol>
+				<ig> 10 </ig>
+			</idopont>
+			<helyszin> III. Előadó </helyszin>
+			<oktato> Dr. Mileff Péter </oktato>
+			<szak> Programtervező Informatikus </szak>
+		</ora>
+		<ora id="04" tipus="gyakorlat">
+			<targy> Szoftvertechnológia </targy>
+			<idopont>
+				<nap> szerda </nap>
+				<tol> 10 </tol>
+				<ig> 12 </ig>
+			</idopont>
+			<helyszin> III. Előadó </helyszin>
+			<oktato> Dr. Mileff Péter </oktato>
+			<szak> Programtervező Informatikus </szak>
+		</ora>
+
+</orarend>
