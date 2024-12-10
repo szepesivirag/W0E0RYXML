@@ -1,0 +1,58 @@
+{
+  "KA_orarend": {
+    "ora": [
+      {
+        "id": "01",
+        "tipus": "előadás",
+        "targy": "Adatkezelés XML-ben",
+        "idopont": {
+          "nap": "kedd",
+          "tol": "10",
+          "ig": "12"
+        },
+        "helyszin": "Inf/103",
+        "oktato": "Dr. Bednarik László",
+        "szak": "Programtervező Informatikus"
+      },
+      {
+        "id": "02",
+        "tipus": "gyakorlat",
+        "targy": "Adatkezelés XML-ben",
+        "idopont": {
+          "nap": "kedd",
+          "tol": "12",
+          "ig": "14"
+        },
+        "helyszin": "Inf/103",
+        "oktato": "Dr. Bednarik László",
+        "szak": "Programtervező Informatikus"
+      },
+      {
+        "id": "03",
+        "tipus": "előadás",
+        "targy": "Szoftvertechnológia",
+        "idopont": {
+          "nap": "szerda",
+          "tol": "08",
+          "ig": "10"
+        },
+        "helyszin": "III. Előadó",
+        "oktato": "Dr. Mileff Péter",
+        "szak": "Programtervező Informatikus"
+      },
+      {
+        "id": "04",
+        "tipus": "gyakorlat",
+        "targy": "Szoftvertechnológia",
+        "idopont": {
+          "nap": "szerda",
+          "tol": "10",
+          "ig": "12"
+        },
+        "helyszin": "III. Előadó",
+        "oktato": "Dr. Mileff Péter",
+        "szak": "Programtervező Informatikus"
+      }
+    ]
+  }
+}
