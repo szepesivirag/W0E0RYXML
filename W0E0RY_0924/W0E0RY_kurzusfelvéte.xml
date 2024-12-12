@@ -1,0 +1,58 @@
+<!DOCTYPE W0E0RY_kurzusfelvetel SYSTEM "W0E0RY_kurzusfelvetel.dtd">
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<W0E0RY_kurzusfelvetel tanev="2024/2025" egyetem="ME">
+
+    <hallgato id="B8GU52">
+        <hnev>Szepesi Glória VIrág</hnev>
+        <szulev>2001.08.25</szulev>
+        <szak evf="6">Programtervező inf. BsC</szak>
+    </hallgato>
+
+    <kurzusok>
+
+        <kurzus id="Oracle">
+            <kurzusnev>Oracle rendszergazda</kurzusnev>
+            <kredit>5</kredit>
+            <idopont>Hetfo 8:00-10:00</idopont>
+            <hely>Inf/103</hely>
+            <oktato>Dr. Kovacs Laszlo Jozsef</oktato>
+        </kurzus>
+
+        <kurzus id="KorszInf">
+            <kurzusnev>Korszeru Informacios Technologiak</kurzusnev>
+            <kredit>3</kredit>
+            <idopont>Hetfo 12:00-14:00</idopont>
+            <hely>Inf/15</hely>
+            <oktato>Arvai Laszlo Lajos</oktato>
+        </kurzus>
+
+        <kurzus id="XML">
+            <kurzusnev>Adatkezeles XML-ben</kurzusnev>
+            <kredit>5</kredit>
+            <idopont>Kedd 10:00-12:00</idopont>
+            <hely>Inf/103</hely>
+            <oktato>Dr. Bednarik Laszlo</oktato>
+        </kurzus>
+
+        <kurzus id="WebAlk" jovahagyas="igen">
+            <kurzusnev>Webes Alkalmazasok (Java)</kurzusnev>
+            <kredit>5</kredit>
+            <idopont>Kedd 14:00-16:00</idopont>
+            <hely>Inf/102</hely>
+            <oktato>Dr. Barabas Peter</oktato>
+            <oraado>Minta Aron</oraado>
+        </kurzus>
+
+        <kurzus id="MesInt" nyelv="angol">
+            <kurzusnev>Mesterseges Intelligencia Alapok</kurzusnev>
+            <kredit>5</kredit>
+            <idopont>Szerda 10:00-12:00</idopont>
+            <hely>E 32</hely>
+            <oktato>Kunne Dr. Tamas Judit</oktato>
+        </kurzus>
+
+    </kurzusok>
+
+</W0E0RY_kurzusfelvetel>
