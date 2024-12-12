@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE kurzusfelvetel SYSTEM "kurzusfelvetel.dtd">-->
+<kurzusfelvetel tanev="2024_2025_I. " egyetem="ME">
+    <hallgato id="B8GU52.ME">
+        <hnev>Szepesi GLoria</hnev>
+        <szulev>2001-0-25</szulev>
+        <szak evf="5">Ptogramtervező inf.</szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf. 103.</hely>
+            <idopont>Kedd 12:00-13:30</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+        <kurzus id="GEIAL331-B">
+            <kurzusnev>Mesterséges intelligencia I.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf. 103.</hely>
+            <idopont>Kedd 14:00-15:30</idopont>
+            <oktato>Dr. Kunné Judit/oktato>
+        </kurzus>
+        <kurzus id="GEIAL330-B">
+            <kurzusnev>Szoftvertechnológiák</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf. 101.</hely>
+            <idopont>Hétfő 12:00-13:30</idopont>
+            <oktato>Kiss János</oktato>
+        </kurzus>
+    </kurzusok>
+</kurzusfelvetel>
